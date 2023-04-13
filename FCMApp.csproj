@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65691834-5A9A-469C-B65A-F45650147E03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FCMApp</RootNamespace>
+    <AssemblyName>FCMApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\Krypton Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\Krypton Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\Krypton Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\Krypton Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\Krypton Toolkit\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\alrorithmController.cs" />
+    <Compile Include="Controllers\graphController.cs" />
+    <Compile Include="Controllers\instructionController.cs" />
+    <Compile Include="Controllers\libraryController.cs" />
+    <Compile Include="Controllers\mainController.cs" />
+    <Compile Include="Controllers\successFactorController.cs" />
+    <Compile Include="Models\fuzzyCognitiveMap.cs" />
+    <Compile Include="Models\graphFCM.cs" />
+    <Compile Include="Models\Library\activationFunction.cs" />
+    <Compile Include="Models\Library\defuzzificationMethod.cs" />
+    <Compile Include="Models\Library\inferenceEquation.cs" />
+    <Compile Include="Models\Library\membershipFunction.cs" />
+    <Compile Include="Models\Library\successFactors.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\aboutProgramBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\aboutProgramBox.Designer.cs">
+      <DependentUpon>aboutProgramBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\addFactorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\addFactorForm.Designer.cs">
+      <DependentUpon>addFactorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\algorithmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\algorithmForm.Designer.cs">
+      <DependentUpon>algorithmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\conceptsWithChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\conceptsWithChartForm.Designer.cs">
+      <DependentUpon>conceptsWithChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\activationFunLibControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\activationFunLibControl.Designer.cs">
+      <DependentUpon>activationFunLibControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\algStep1Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\algStep1Control.Designer.cs">
+      <DependentUpon>algStep1Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\algStep2Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\algStep2Control.Designer.cs">
+      <DependentUpon>algStep2Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\algStep3Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\algStep3Control.Designer.cs">
+      <DependentUpon>algStep3Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\algStep4Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\algStep4Control.Designer.cs">
+      <DependentUpon>algStep4Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\algStep5Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\algStep5Control.Designer.cs">
+      <DependentUpon>algStep5Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\defuzLibControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\defuzLibControl.Designer.cs">
+      <DependentUpon>defuzLibControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\fcmAlgDescriptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\fcmAlgDescriptionControl.Designer.cs">
+      <DependentUpon>fcmAlgDescriptionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\inferenceEqLibControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\inferenceEqLibControl.Designer.cs">
+      <DependentUpon>inferenceEqLibControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\LibraryViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\LibraryViewControl.Designer.cs">
+      <DependentUpon>LibraryViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\mfLibControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\mfLibControl.Designer.cs">
+      <DependentUpon>mfLibControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\successFactorsLibControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\successFactorsLibControl.Designer.cs">
+      <DependentUpon>successFactorsLibControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\WelcomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\WelcomeControl.Designer.cs">
+      <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FactorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FactorsForm.Designer.cs">
+      <DependentUpon>FactorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FCMView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FCMView.Designer.cs">
+      <DependentUpon>FCMView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\step3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\step3Form.Designer.cs">
+      <DependentUpon>step3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\step4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\step4Form.Designer.cs">
+      <DependentUpon>step4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\step5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\step5Form.Designer.cs">
+      <DependentUpon>step5Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\aboutProgramBox.resx">
+      <DependentUpon>aboutProgramBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\addFactorForm.resx">
+      <DependentUpon>addFactorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\algorithmForm.resx">
+      <DependentUpon>algorithmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\conceptsWithChartForm.resx">
+      <DependentUpon>conceptsWithChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\activationFunLibControl.resx">
+      <DependentUpon>activationFunLibControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\algStep1Control.resx">
+      <DependentUpon>algStep1Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\algStep2Control.resx">
+      <DependentUpon>algStep2Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\algStep3Control.resx">
+      <DependentUpon>algStep3Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\algStep4Control.resx">
+      <DependentUpon>algStep4Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\algStep5Control.resx">
+      <DependentUpon>algStep5Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\defuzLibControl.resx">
+      <DependentUpon>defuzLibControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\fcmAlgDescriptionControl.resx">
+      <DependentUpon>fcmAlgDescriptionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\inferenceEqLibControl.resx">
+      <DependentUpon>inferenceEqLibControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\LibraryViewControl.resx">
+      <DependentUpon>LibraryViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\mfLibControl.resx">
+      <DependentUpon>mfLibControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\successFactorsLibControl.resx">
+      <DependentUpon>successFactorsLibControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\WelcomeControl.resx">
+      <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FactorsForm.resx">
+      <DependentUpon>FactorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FCMView.resx">
+      <DependentUpon>FCMView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\step3Form.resx">
+      <DependentUpon>step3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\step4Form.resx">
+      <DependentUpon>step4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\step5Form.resx">
+      <DependentUpon>step5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\FCMApp.Models.Library.successFactors.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\FCM.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

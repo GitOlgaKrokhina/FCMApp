@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<FCM>
+  <graph>
+    <nodes>
+      <factor>
+        <id>1</id>
+        <name>&#x41A;&#x430;&#x447;&#x435;&#x441;&#x442;&#x432;&#x43E; &#x43F;&#x440;&#x43E;&#x446;&#x435;&#x441;&#x441;&#x43E;&#x432; &#x443;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F; &#x43F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x43E;&#x43C;</name>
+        <membershipFunction>
+          <type>TriangularFunction</type>
+          <parameters>1;4;9</parameters>
+          <domain>1;9</domain>
+          <defuzzificationMethod>centerOfGravityMethod</defuzzificationMethod>
+        </membershipFunction>
+      </factor>
+      <factor>
+        <id>2</id>
+        <name>&#x421;&#x43E;&#x431;&#x43B;&#x44E;&#x434;&#x435;&#x43D;&#x438;&#x435; &#x441;&#x440;&#x43E;&#x43A;&#x43E;&#x432;</name>
+        <membershipFunction>
+          <type>TrapezoidalFunction</type>
+          <parameters>2;5;8;9</parameters>
+          <domain>2;9</domain>
+          <defuzzificationMethod>middleOfMaximaMethod</defuzzificationMethod>
+        </membershipFunction>
+      </factor>
+      <factor>
+        <id>3</id>
+        <name>&#x423;&#x434;&#x43E;&#x432;&#x43B;&#x435;&#x442;&#x432;&#x43E;&#x440;&#x435;&#x43D;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x441;&#x442;&#x435;&#x439;&#x43A;&#x445;&#x43E;&#x43B;&#x434;&#x435;&#x440;&#x43E;&#x432;</name>
+        <membershipFunction>
+          <type>QuadraticZsplineFunction</type>
+          <parameters>3;8</parameters>
+          <domain>3;8</domain>
+          <defuzzificationMethod>centerOfGravityMethod</defuzzificationMethod>
+        </membershipFunction>
+      </factor>
+    </nodes>
+    <edges>
+      <edge sourceNodeID="1" targetNodeID="2" weight="1" />
+      <edge sourceNodeID="1" targetNodeID="3" weight="0.4" />
+      <edge sourceNodeID="2" targetNodeID="1" weight="1" />
+      <edge sourceNodeID="2" targetNodeID="3" weight="0.5" />
+      <edge sourceNodeID="3" targetNodeID="1" weight="0.9" />
+      <edge sourceNodeID="3" targetNodeID="2" weight="1" />
+    </edges>
+  </graph>
+  <activationFunction>sigmoidFunction</activationFunction>
+  <numberOfIterations>10</numberOfIterations>
+  <activationVector>1;1;1</activationVector>
+  <inferenceEquation>scaledOutputCircuit</inferenceEquation>
+</FCM>

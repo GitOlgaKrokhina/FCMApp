@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FCM>
+	<activationFunction></activationFunction>
+
+	<numberOfIterations></numberOfIterations>
+
+	<activationVector></activationVector>
+
+	<inferenceEquation></inferenceEquation>
+
+	<graph>
+		<nodes>
+			<factor>
+				<id></id>
+				<name></name>
+				<membershipFunction>
+					<type></type>
+					<parameters></parameters>
+					<domain></domain>
+					<defuzzificationMethod></defuzzificationMethod>
+				</membershipFunction>
+			</factor>
+		</nodes>
+		<edges>
+			<edge sourceNodeID="0" targetNodeID="2" weight="2"></edge>
+		</edges>
+	</graph>
+</FCM>
