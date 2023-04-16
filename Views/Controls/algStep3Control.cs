@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FCMApp.Views.Controls;
 using FCMApp.Models;
+using System.Xml.Linq;
 
 namespace FCMApp.Views.Controls
 {
@@ -24,6 +25,12 @@ namespace FCMApp.Views.Controls
         {
             vectorTextBox.Text = "Введите вектор активации";//подсказка
             vectorTextBox.ForeColor = Color.Gray;
+
+            ToolTip t = new ToolTip();
+            t.SetToolTip(vectorTextBox, "Числа вектора активации по количеству факторов успеха через запятую");
+
+            ToolTip t1 = new ToolTip();
+            t1.SetToolTip(iterTextBox, "Целое число, равное количеству итераций алгоритма");
         }
 
         private void vectorTextBox_Enter(object sender, EventArgs e)
@@ -60,6 +67,13 @@ namespace FCMApp.Views.Controls
             }
 
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            algStep1Control.factorsChecked.Clear();
+            fuzzyCognitiveMap.task1 = new XDocument(new XDeclaration(null, "us-ascii", null));
+            this.ParentForm.Close();
         }
     }
 }

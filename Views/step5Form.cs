@@ -22,5 +22,10 @@ namespace FCMApp.Views
             step5temp.Visible = true;
             Controls.Add(step5temp);
         }
+
+        private void step5Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

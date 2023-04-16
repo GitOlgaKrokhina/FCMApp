@@ -37,11 +37,15 @@ namespace FCMApp.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(771, 539);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(789, 586);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(789, 586);
             this.Name = "step5Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "step5Form";
+            this.Text = "Шаг 5. Изменения значений концептов НКК";
+            this.Load += new System.EventHandler(this.step5Form_Load);
             this.ResumeLayout(false);
 
         }

@@ -44,7 +44,7 @@ namespace FCMApp.Views.Controls
                 MessageBox.Show("Не выбраны факторы успеха", "Ошибка",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (factorsChecked.Count() == 1)
+            else if (factorsChecked.Count() == 1)
             {
                 MessageBox.Show("Минимальное количество факторов - 2", "Ошибка",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -56,6 +56,12 @@ namespace FCMApp.Views.Controls
             }
 
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            factorsChecked.Clear();
+            this.ParentForm.Close();
         }
     }
 }

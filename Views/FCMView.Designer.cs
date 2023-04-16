@@ -119,7 +119,9 @@ namespace FCMApp.Views
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.sheet);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(826, 596);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(826, 596);
             this.Name = "FCMView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Нечеткая когнитивная карта";

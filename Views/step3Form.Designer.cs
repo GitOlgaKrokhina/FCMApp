@@ -37,11 +37,14 @@ namespace FCMApp.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(771, 539);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(789, 586);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(789, 586);
             this.Name = "step3Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "step3Form";
+            this.Text = "Шаг 3. Выбор параметров для алгоритма обучения НКК";
             this.ResumeLayout(false);
 
         }

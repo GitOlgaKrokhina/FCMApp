@@ -18,18 +18,6 @@ namespace FCMApp.Views
         {
             InitializeComponent();
             LoadChart(matrix);
-
-            dataGridViewFactors.Columns.Add("Номер", "Номер");
-            dataGridViewFactors.Columns.Add("Название", "Название");
-            for (int i = 0; i < alrorithmController.numberOfFactors; i++)
-            {
-                dataGridViewFactors.Rows.Add();
-            }
-            for (int i = 0; i < alrorithmController.numberOfFactors; i++)
-            {
-                dataGridViewFactors.Rows[i].Cells[0].Value = $"Factor {i + 1}";
-                dataGridViewFactors.Rows[i].Cells[1].Value = alrorithmController.namesForChart[i];
-            }
         }
         void LoadChart(double[,] matrix)
         {
@@ -51,7 +39,7 @@ namespace FCMApp.Views
 
             for (int j = 0; j < alrorithmController.numberOfFactors; j++)
             {
-                Series mySeriesOfPoint = new Series($"Factor {j + 1}");
+                Series mySeriesOfPoint = new Series($"Фактор {j + 1} - {alrorithmController.namesForChart[j]}");
                 mySeriesOfPoint.ChartType = SeriesChartType.Line;
                 for (int i = 1; i < alrorithmController.numberOfIterations + 2; i++)
                 {

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FCMApp.Views;
 using FCMApp.Models;
 using FCMApp.Controllers;
+using System.Xml.Linq;
 
 namespace FCMApp.Views.Controls
 {
@@ -38,6 +39,15 @@ namespace FCMApp.Views.Controls
         {
             parametersTextBox.Text = "Введите указанные параметры через точку с запятой";//подсказка
             parametersTextBox.ForeColor = Color.Gray;
+
+            domainTextBox.Text = "Границы через точку с запятой";//подсказка
+            domainTextBox.ForeColor = Color.Gray;
+
+            ToolTip t = new ToolTip();
+            t.SetToolTip(domainTextBox, "Два числа через точку с запятой");
+            ToolTip t1 = new ToolTip();
+            t1.SetToolTip(parametersTextBox, "Перечисленные параметры в формате чисел через точку с запятой");
+
         }
 
         private void parametersTextBox_Enter(object sender, EventArgs e)
@@ -161,6 +171,28 @@ namespace FCMApp.Views.Controls
             }
 
             
+        }
+
+        private void domainTextBox_Enter(object sender, EventArgs e)
+        {
+            domainTextBox.Text = null;
+            domainTextBox.ForeColor = Color.Black;
+        }
+
+        private void domainTextBox_Leave(object sender, EventArgs e)
+        {
+            if (domainTextBox.Text == "")
+            {
+                domainTextBox.Text = "Границы через точку с запятой";//подсказка
+                domainTextBox.ForeColor = Color.Gray;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            algStep1Control.factorsChecked.Clear();
+            fuzzyCognitiveMap.task1 = new XDocument(new XDeclaration(null, "us-ascii", null));
+            this.ParentForm.Close();
         }
     }
 }

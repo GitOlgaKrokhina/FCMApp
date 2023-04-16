@@ -29,13 +29,16 @@ namespace FCMApp.Views.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(algStep5Control));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewConcepts = new System.Windows.Forms.DataGridView();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.showConceptsButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.saveXMLButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.linkLabelExample = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConcepts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -45,9 +48,9 @@ namespace FCMApp.Views.Controls
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(29, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 23);
+            this.label1.Size = new System.Drawing.Size(449, 23);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Шаг 5. Значения концептов";
+            this.label1.Text = "Шаг 5. Изменения значений концептов НКК";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridViewConcepts
@@ -279,11 +282,24 @@ namespace FCMApp.Views.Controls
             this.linkLabelExample.Text = "Пример интерпретации результатов (алгоритма)";
             this.linkLabelExample.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelExample_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(666, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // algStep5Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabelExample);
             this.Controls.Add(this.saveXMLButton);
             this.Controls.Add(this.showConceptsButton);
@@ -293,6 +309,7 @@ namespace FCMApp.Views.Controls
             this.Name = "algStep5Control";
             this.Size = new System.Drawing.Size(729, 518);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConcepts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +323,6 @@ namespace FCMApp.Views.Controls
         private ComponentFactory.Krypton.Toolkit.KryptonButton showConceptsButton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton saveXMLButton;
         private System.Windows.Forms.LinkLabel linkLabelExample;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

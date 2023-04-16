@@ -29,6 +29,7 @@ namespace FCMApp.Views.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(algStep2Control));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelNameOfFactor = new System.Windows.Forms.Label();
@@ -43,8 +44,11 @@ namespace FCMApp.Views.Controls
             this.nextButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ComboBoxMF = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.mfComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.labelDomain = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxMF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mfComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +90,7 @@ namespace FCMApp.Views.Controls
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(29, 139);
+            this.label3.Location = new System.Drawing.Point(29, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(234, 19);
             this.label3.TabIndex = 14;
@@ -117,9 +121,9 @@ namespace FCMApp.Views.Controls
             // 
             // parametersTextBox
             // 
-            this.parametersTextBox.Location = new System.Drawing.Point(33, 323);
+            this.parametersTextBox.Location = new System.Drawing.Point(33, 321);
             this.parametersTextBox.Name = "parametersTextBox";
-            this.parametersTextBox.Size = new System.Drawing.Size(640, 39);
+            this.parametersTextBox.Size = new System.Drawing.Size(669, 39);
             this.parametersTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -137,7 +141,7 @@ namespace FCMApp.Views.Controls
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(29, 208);
+            this.label6.Location = new System.Drawing.Point(29, 182);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(356, 19);
             this.label6.TabIndex = 19;
@@ -146,9 +150,9 @@ namespace FCMApp.Views.Controls
             // 
             // domainTextBox
             // 
-            this.domainTextBox.Location = new System.Drawing.Point(416, 199);
+            this.domainTextBox.Location = new System.Drawing.Point(433, 174);
             this.domainTextBox.Name = "domainTextBox";
-            this.domainTextBox.Size = new System.Drawing.Size(257, 39);
+            this.domainTextBox.Size = new System.Drawing.Size(269, 39);
             this.domainTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -158,6 +162,8 @@ namespace FCMApp.Views.Controls
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.domainTextBox.StateNormal.Border.Rounding = 20;
             this.domainTextBox.TabIndex = 20;
+            this.domainTextBox.Enter += new System.EventHandler(this.domainTextBox_Enter);
+            this.domainTextBox.Leave += new System.EventHandler(this.domainTextBox_Leave);
             // 
             // label7
             // 
@@ -318,7 +324,7 @@ namespace FCMApp.Views.Controls
             "квадратичная Z-сплайн",
             "экспоненциальная (гауссова)",
             "колоколообразная"});
-            this.ComboBoxMF.Location = new System.Drawing.Point(282, 132);
+            this.ComboBoxMF.Location = new System.Drawing.Point(311, 121);
             this.ComboBoxMF.Name = "ComboBoxMF";
             this.ComboBoxMF.Size = new System.Drawing.Size(391, 37);
             this.ComboBoxMF.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -334,7 +340,7 @@ namespace FCMApp.Views.Controls
             this.mfComboBox.Items.AddRange(new object[] {
             "метод среднего максимумам (Middle of Maxima)",
             "метод центра тяжести (Center of Gravity)"});
-            this.mfComboBox.Location = new System.Drawing.Point(282, 377);
+            this.mfComboBox.Location = new System.Drawing.Point(311, 376);
             this.mfComboBox.Name = "mfComboBox";
             this.mfComboBox.Size = new System.Drawing.Size(391, 37);
             this.mfComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -343,11 +349,37 @@ namespace FCMApp.Views.Controls
             this.mfComboBox.StateCommon.ComboBox.Border.Rounding = 20;
             this.mfComboBox.TabIndex = 27;
             // 
+            // labelDomain
+            // 
+            this.labelDomain.AutoSize = true;
+            this.labelDomain.BackColor = System.Drawing.Color.White;
+            this.labelDomain.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDomain.Location = new System.Drawing.Point(29, 220);
+            this.labelDomain.Name = "labelDomain";
+            this.labelDomain.Size = new System.Drawing.Size(646, 19);
+            this.labelDomain.TabIndex = 28;
+            this.labelDomain.Text = "В формате a;b, где a и b - левая и правая границы области определения, соотвестве" +
+    "нно";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(666, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // algStep2Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelDomain);
             this.Controls.Add(this.mfComboBox);
             this.Controls.Add(this.ComboBoxMF);
             this.Controls.Add(this.nextButton);
@@ -367,6 +399,7 @@ namespace FCMApp.Views.Controls
             this.Load += new System.EventHandler(this.algStep2Control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxMF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mfComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +421,7 @@ namespace FCMApp.Views.Controls
         private ComponentFactory.Krypton.Toolkit.KryptonButton nextButton;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboBoxMF;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox mfComboBox;
+        private System.Windows.Forms.Label labelDomain;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

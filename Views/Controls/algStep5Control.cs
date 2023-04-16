@@ -91,5 +91,12 @@ namespace FCMApp.Views.Controls
         {
             instructionController.loadInstruction();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            algStep1Control.factorsChecked.Clear();
+            fuzzyCognitiveMap.task1 = new XDocument(new XDeclaration(null, "us-ascii", null));
+            this.ParentForm.Close();
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace FCMApp.Views.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(algStep3Control));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,8 +41,10 @@ namespace FCMApp.Views.Controls
             this.ComboBoxInferenceEquation = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.nextButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.labelVector = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxActivationFunction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxInferenceEquation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -248,11 +251,24 @@ namespace FCMApp.Views.Controls
             this.labelVector.Text = "Введите вектор в формате 1,1,0,1... по количеству выбранных факторов";
             this.labelVector.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(666, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // algStep3Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelVector);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.ComboBoxInferenceEquation);
@@ -269,6 +285,7 @@ namespace FCMApp.Views.Controls
             this.Load += new System.EventHandler(this.algStep3Control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxActivationFunction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxInferenceEquation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +304,6 @@ namespace FCMApp.Views.Controls
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboBoxInferenceEquation;
         private ComponentFactory.Krypton.Toolkit.KryptonButton nextButton;
         private System.Windows.Forms.Label labelVector;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

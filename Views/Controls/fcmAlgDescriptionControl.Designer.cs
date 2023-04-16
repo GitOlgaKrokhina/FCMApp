@@ -45,7 +45,7 @@ namespace FCMApp.Views.Controls
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(29, 21);
+            this.label1.Location = new System.Drawing.Point(29, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(230, 23);
             this.label1.TabIndex = 9;
@@ -55,11 +55,11 @@ namespace FCMApp.Views.Controls
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(48, 62);
+            this.label2.Location = new System.Drawing.Point(48, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(626, 150);
+            this.label2.Size = new System.Drawing.Size(626, 200);
             this.label2.TabIndex = 10;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -68,7 +68,7 @@ namespace FCMApp.Views.Controls
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(29, 240);
+            this.label3.Location = new System.Drawing.Point(29, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 23);
             this.label3.TabIndex = 11;
@@ -80,18 +80,19 @@ namespace FCMApp.Views.Controls
             this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(52, 283);
+            this.label4.Location = new System.Drawing.Point(48, 306);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(504, 113);
+            this.label4.Size = new System.Drawing.Size(504, 111);
             this.label4.TabIndex = 12;
             this.label4.Text = "Шаг 1. Выбор факторов успеха.\r\nШаг 2. Описание факторов успеха.\r\nШаг 3. Выбор пар" +
-    "аметров для алгоритма обучения НКК.\r\nШаг 4. Определение весов НКК.\r\nШаг 5. Резул" +
-    "ьтаты алгоритма.";
+    "аметров для алгоритма обучения НКК.\r\nШаг 4. Определение весов НКК.\r\nШаг 5. Получ" +
+    "ение результатов выполнения алгоритма.";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // facmGoButton
             // 
             this.facmGoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.facmGoButton.Location = new System.Drawing.Point(483, 429);
+            this.facmGoButton.Location = new System.Drawing.Point(483, 439);
             this.facmGoButton.Name = "facmGoButton";
             this.facmGoButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.facmGoButton.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -159,7 +160,7 @@ namespace FCMApp.Views.Controls
             // kryptonButton3
             // 
             this.kryptonButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonButton3.Location = new System.Drawing.Point(63, 429);
+            this.kryptonButton3.Location = new System.Drawing.Point(64, 440);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -226,7 +227,7 @@ namespace FCMApp.Views.Controls
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(13, 47);
+            this.kryptonButton4.Location = new System.Drawing.Point(13, 42);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.WhiteSmoke;
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.WhiteSmoke;
@@ -239,7 +240,7 @@ namespace FCMApp.Views.Controls
             this.kryptonButton4.OverrideDefault.Border.Rounding = 50;
             this.kryptonButton4.OverrideDefault.Border.Width = 1;
             this.kryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton4.Size = new System.Drawing.Size(701, 183);
+            this.kryptonButton4.Size = new System.Drawing.Size(701, 222);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke;
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.WhiteSmoke;
             this.kryptonButton4.StateCommon.Back.ColorAngle = 45F;
@@ -275,7 +276,7 @@ namespace FCMApp.Views.Controls
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(13, 266);
+            this.kryptonButton2.Location = new System.Drawing.Point(13, 298);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.WhiteSmoke;
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.WhiteSmoke;
@@ -288,7 +289,7 @@ namespace FCMApp.Views.Controls
             this.kryptonButton2.OverrideDefault.Border.Rounding = 50;
             this.kryptonButton2.OverrideDefault.Border.Width = 1;
             this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(701, 146);
+            this.kryptonButton2.Size = new System.Drawing.Size(701, 127);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.WhiteSmoke;
             this.kryptonButton2.StateCommon.Back.ColorAngle = 45F;

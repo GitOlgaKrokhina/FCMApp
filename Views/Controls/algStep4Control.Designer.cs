@@ -29,13 +29,16 @@ namespace FCMApp.Views.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(algStep4Control));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewMatrix = new System.Windows.Forms.DataGridView();
             this.nextButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.dataGridViewFactors = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFactors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -158,11 +161,24 @@ namespace FCMApp.Views.Controls
             this.label2.Text = "Перечень факторов:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(666, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // algStep4Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridViewFactors);
             this.Controls.Add(this.nextButton);
@@ -172,6 +188,7 @@ namespace FCMApp.Views.Controls
             this.Size = new System.Drawing.Size(729, 518);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFactors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +201,6 @@ namespace FCMApp.Views.Controls
         private ComponentFactory.Krypton.Toolkit.KryptonButton nextButton;
         private System.Windows.Forms.DataGridView dataGridViewFactors;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

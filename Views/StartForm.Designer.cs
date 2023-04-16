@@ -37,7 +37,7 @@ namespace FCMApp.Views
             this.aboutProgramButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.exitButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            fcmAlgDescriptionControl1 = new FCMApp.Views.Controls.fcmAlgDescriptionControl();
+            this.fcmAlgDescriptionControl1 = new FCMApp.Views.Controls.fcmAlgDescriptionControl();
             inferenceEqLibControl1 = new FCMApp.Views.Controls.inferenceEqLibControl();
             defuzLibControl1 = new FCMApp.Views.Controls.defuzLibControl();
             activationFunLibControl1 = new FCMApp.Views.Controls.activationFunLibControl();
@@ -430,11 +430,11 @@ namespace FCMApp.Views
             // 
             // fcmAlgDescriptionControl1
             // 
-            fcmAlgDescriptionControl1.BackColor = System.Drawing.Color.White;
-            fcmAlgDescriptionControl1.Location = new System.Drawing.Point(0, 0);
-            fcmAlgDescriptionControl1.Name = "fcmAlgDescriptionControl1";
-            fcmAlgDescriptionControl1.Size = new System.Drawing.Size(729, 518);
-            fcmAlgDescriptionControl1.TabIndex = 13;
+            this.fcmAlgDescriptionControl1.BackColor = System.Drawing.Color.White;
+            this.fcmAlgDescriptionControl1.Location = new System.Drawing.Point(0, 0);
+            this.fcmAlgDescriptionControl1.Name = "fcmAlgDescriptionControl1";
+            this.fcmAlgDescriptionControl1.Size = new System.Drawing.Size(729, 518);
+            this.fcmAlgDescriptionControl1.TabIndex = 13;
             // 
             // inferenceEqLibControl1
             // 
@@ -514,7 +514,7 @@ namespace FCMApp.Views
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Нечеткие когнитинвые карты для анализа успеха IT-проекта";
+            this.Text = "Нечеткие когнитивные карты для анализа успеха IT-проекта";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -532,11 +532,13 @@ namespace FCMApp.Views
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         public Controls.WelcomeControl welcomeControl1;
         public LibraryViewControl libraryViewControl1;
+
         public static Controls.successFactorsLibControl successFactorsLibControl1;
         public static Controls.mfLibControl mfLibControl1;
         public static Controls.activationFunLibControl activationFunLibControl1;
         public static Controls.defuzLibControl defuzLibControl1;
         public static Controls.inferenceEqLibControl inferenceEqLibControl1;
-        public static Controls.fcmAlgDescriptionControl fcmAlgDescriptionControl1;
+
+        public Controls.fcmAlgDescriptionControl fcmAlgDescriptionControl1;
     }
 }

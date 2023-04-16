@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using FCMApp.Models;
 
 namespace FCMApp.Views.Controls
@@ -52,11 +53,22 @@ namespace FCMApp.Views.Controls
 
         private void dataGridViewMatrix_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (Convert.ToDouble(dataGridViewMatrix.Rows[e.RowIndex].Cells[e.ColumnIndex].Value) > 1 || Convert.ToDouble(dataGridViewMatrix.Rows[e.RowIndex].Cells[e.ColumnIndex].Value) < -1)
+            try
             {
-                MessageBox.Show("Значение веса должно находится в пределах от -1 до 1", "Ошибка задания веса", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (Convert.ToDouble(dataGridViewMatrix.Rows[e.RowIndex].Cells[e.ColumnIndex].Value) > 1 || Convert.ToDouble(dataGridViewMatrix.Rows[e.RowIndex].Cells[e.ColumnIndex].Value) < -1)
+                {
+                    MessageBox.Show("Значение веса должно находится в пределах от -1 до 1", "Ошибка задания веса", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    dataGridViewMatrix.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = "0";
+                }
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Значение веса должно задаваться целым числом или дробным числом с запятой", "Ошибка задания веса", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dataGridViewMatrix.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = "0";
             }
+
+            
         }
 
         private void nextButton_Click(object sender, EventArgs e)
@@ -79,6 +91,13 @@ namespace FCMApp.Views.Controls
             step5Form temp = new step5Form(fuzzyCognitiveMap.returnScheme());
             temp.Show();
             //this.ParentForm.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            algStep1Control.factorsChecked.Clear();
+            fuzzyCognitiveMap.task1 = new XDocument(new XDeclaration(null, "us-ascii", null));
+            this.ParentForm.Close();
         }
     }
 }

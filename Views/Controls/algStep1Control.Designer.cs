@@ -29,11 +29,14 @@ namespace FCMApp.Views.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(algStep1Control));
             this.label1 = new System.Windows.Forms.Label();
             this.FactorsListBox = new System.Windows.Forms.CheckedListBox();
             this.addFactorButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.nextButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -244,11 +247,24 @@ namespace FCMApp.Views.Controls
             this.kryptonButton4.TabIndex = 18;
             this.kryptonButton4.Values.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(666, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // algStep1Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.addFactorButton);
             this.Controls.Add(this.FactorsListBox);
@@ -256,6 +272,7 @@ namespace FCMApp.Views.Controls
             this.Controls.Add(this.kryptonButton4);
             this.Name = "algStep1Control";
             this.Size = new System.Drawing.Size(729, 518);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +285,6 @@ namespace FCMApp.Views.Controls
         private ComponentFactory.Krypton.Toolkit.KryptonButton addFactorButton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton nextButton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
