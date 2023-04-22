@@ -41,8 +41,23 @@ namespace FCMApp.Models.Library
             for (int i = 0; i < x.Length; i++)
             {
                 if (x[i] <= leftA) arrayY[i] = 0;
-                if (leftA <= x[i] && x[i] <= middleC) arrayY[i] = (x[i] - leftA) / (middleC - leftA);
-                if (middleC <= x[i] && x[i] <= rightB) arrayY[i] = (rightB - x[i]) / (rightB - middleC);
+
+                if (leftA <= x[i] && x[i] < middleC)
+                {
+                    if (middleC == leftA) arrayY[i] = 1;
+                    else arrayY[i] = (x[i] - leftA) / (middleC - leftA);
+                }
+                    
+                if (x[i] == middleC) arrayY[i] = 1;
+
+                if (middleC < x[i] && x[i] <= rightB)
+                {
+                    if (rightB == middleC) arrayY[i] = 1;
+                    else arrayY[i] = (rightB - x[i]) / (rightB - middleC);
+                }
+
+                    
+
                 if (x[i] >= rightB) arrayY[i] = 0;
             }
             return arrayY;
@@ -70,9 +85,21 @@ namespace FCMApp.Models.Library
             for (int i = 0; i < x.Length; i++)
             {
                 if (x[i] <= leftA) arrayY[i] = 0;
-                if (leftA <= x[i] && x[i] <= firstMiddleC) arrayY[i] = (x[i] - leftA) / (firstMiddleC - leftA);
+                
+                if (leftA <= x[i] && x[i] <= firstMiddleC)
+                {
+                    if (firstMiddleC == leftA) { arrayY[i] = 1; }
+                    else arrayY[i] = (x[i] - leftA) / (firstMiddleC - leftA);
+                }
+                
                 if (firstMiddleC <= x[i] && x[i] <= secondMiddleD) arrayY[i] = 1;
-                if (secondMiddleD <= x[i] && x[i] <= rightB) arrayY[i] = (rightB - x[i]) / (rightB - secondMiddleD);
+                
+                if (secondMiddleD <= x[i] && x[i] <= rightB)
+                {
+                    if(rightB == secondMiddleD) { arrayY[i] = 1; }
+                    else arrayY[i] = (rightB - x[i]) / (rightB - secondMiddleD);
+                } 
+               
                 if (x[i] >= rightB) arrayY[i] = 0;
             }
             return arrayY;

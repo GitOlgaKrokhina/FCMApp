@@ -62,6 +62,7 @@ namespace FCMApp.Views
             this.Name = "conceptsWithChartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Графическое отображение значений концептов";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.conceptsWithChartForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 

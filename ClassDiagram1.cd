@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FCMApp.Controllers.alrorithmController" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAKAAgQAAAAIQAAAAABAAQAAAACJAAAADAAg=</HashCode>
+      <FileName>Controllers\alrorithmController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.graphController" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\graphController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.VertexDraw" Collapsed="true">
+    <Position X="13.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Controllers\graphController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.EdgeDraw" Collapsed="true">
+    <Position X="13.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Controllers\graphController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.DrawGraph" Collapsed="true">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAIAACAAgYAAAAAAAAAABEIAAABSAAAAAACAAAAAAg=</HashCode>
+      <FileName>Controllers\graphController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.instructionController" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\instructionController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.libraryController" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\libraryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.mainController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\mainController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Controllers.successFactorController" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\successFactorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.fuzzyCognitiveMap" Collapsed="true">
+    <Position X="13.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAEAEAAABACAAAAAEACAA=</HashCode>
+      <FileName>Models\fuzzyCognitiveMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.graphFCM" Collapsed="true">
+    <Position X="13.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAABCAAQAAAAQ=</HashCode>
+      <FileName>Models\graphFCM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.activationFunction" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\Library\activationFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.bivalentFunction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\Library\activationFunction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.trivalentFunction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\Library\activationFunction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.sigmoidFunction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\Library\activationFunction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.hyperbolicTangentFunction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\Library\activationFunction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.defuzzificationMethod" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAAAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Library\defuzzificationMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.centerOfGravityMethod" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Library\defuzzificationMethod.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.middleOfMaximaMethod" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Library\defuzzificationMethod.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.inferenceEquation" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Library\inferenceEquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.coscoOutputCircuit" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Models\Library\inferenceEquation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.modifiedCoscoOutputCircuit" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Models\Library\inferenceEquation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.scaledOutputCircuit" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Models\Library\inferenceEquation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FCMApp.Models.Library.membershipFunction" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAgAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.TriangularFunction" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAABAAAAAggA=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.TrapezoidalFunction" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAABAAAAAAAAAAAAAQAAAAAAAAAAAhAAAAAgAA=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.QuadraticSsplineFunction" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAAAABAAAAAgAA=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.QuadraticZsplineFunction" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAABAAAAAwAA=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.ExponentialFunction" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAJAAAAAAAA=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.BellShapedFunction" Collapsed="true">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQIAAAAAAAAAEAAAAAAAAABAAAAIAAA=</HashCode>
+      <FileName>Models\Library\membershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Models.Library.successFactors" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAgAEAAEJDAAACCAAAAAAAAACAAAAABAA=</HashCode>
+      <FileName>Models\Library\successFactors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Program" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.aboutProgramBox" Collapsed="true">
+    <Position X="23.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAAAAgAACAgCAUAAACAAAADAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\aboutProgramBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.addFactorForm" Collapsed="true">
+    <Position X="23.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAgACAAABEAAACAAAACCAAAAAAAAAAAAAAABCA=</HashCode>
+      <FileName>Views\addFactorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.algorithmForm" Collapsed="true">
+    <Position X="23.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\algorithmForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.conceptsWithChartForm" Collapsed="true">
+    <Position X="23.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAACAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\conceptsWithChartForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.LibraryViewControl" Collapsed="true">
+    <Position X="29.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAACCBAgBAAAACABACCgEAAABAAAAEAAABAAAA=</HashCode>
+      <FileName>Views\Controls\LibraryViewControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.FactorsForm" Collapsed="true">
+    <Position X="23.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\FactorsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.FCMView" Collapsed="true">
+    <Position X="25.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAAAAaAAAAAAAACAAAACAAAIAgEACAAQQAAAgAA=</HashCode>
+      <FileName>Views\FCMView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.StartForm" Collapsed="true">
+    <Position X="25.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAgEDAAABACIIDEAAACAAAAACAAgARQAAgAABA=</HashCode>
+      <FileName>Views\StartForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.step3Form" Collapsed="true">
+    <Position X="25.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\step3Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.step4Form" Collapsed="true">
+    <Position X="25.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\step4Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.step5Form" Collapsed="true">
+    <Position X="25.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACCAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\step5Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.activationFunLibControl" Collapsed="true">
+    <Position X="29.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhQgACEAABAAAACAAAACAAAAAAAAAIAAAABAAEA=</HashCode>
+      <FileName>Views\Controls\activationFunLibControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.algStep1Control" Collapsed="true">
+    <Position X="31" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIA4AAAACAAABIAAKCAAAACAAAAAAAAAIAAAABAAAA=</HashCode>
+      <FileName>Views\Controls\algStep1Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.algStep2Control" Collapsed="true">
+    <Position X="31" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEYAAAACgAEBAEACCAAAISQAQAAAgFBAAIQARBAAE=</HashCode>
+      <FileName>Views\Controls\algStep2Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.algStep3Control" Collapsed="true">
+    <Position X="31" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAACAAABAAACCAIAACAAAABAQCBAAAACBAAAI=</HashCode>
+      <FileName>Views\Controls\algStep3Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.algStep4Control" Collapsed="true">
+    <Position X="31" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAACAAABAAAKCAAAACAAAAAAAACAAAAABQAAA=</HashCode>
+      <FileName>Views\Controls\algStep4Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.algStep5Control" Collapsed="true">
+    <Position X="31" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAACAAABACgACCCABCAAAAAAAAAACAAABBAEA=</HashCode>
+      <FileName>Views\Controls\algStep5Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.defuzLibControl" Collapsed="true">
+    <Position X="29.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQgACAAABAAAACAAAACAAAAAAAAAAAAAABAAEA=</HashCode>
+      <FileName>Views\Controls\defuzLibControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.fcmAlgDescriptionControl" Collapsed="true">
+    <Position X="27.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQgACEACBAAAACCAAACAAAACAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Views\Controls\fcmAlgDescriptionControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.inferenceEqLibControl" Collapsed="true">
+    <Position X="29.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAgACEAABAAAACAAAACAAAAAAAAAAAAAABAAEA=</HashCode>
+      <FileName>Views\Controls\inferenceEqLibControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.mfLibControl" Collapsed="true">
+    <Position X="29.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8wAAIhAAACAAABAAAACAQAACAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Views\Controls\mfLibControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.successFactorsLibControl" Collapsed="true">
+    <Position X="29.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAACAAABAAAACEAAACAAYAAAIAAAAAABAgAAA=</HashCode>
+      <FileName>Views\Controls\successFactorsLibControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FCMApp.Views.Controls.WelcomeControl" Collapsed="true">
+    <Position X="27.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Controls\WelcomeControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FCMApp.Models.Library.ISetActivationFunction" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\Library\activationFunction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FCMApp.Models.Library.IDefuzzified" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Library\defuzzificationMethod.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FCMApp.Models.Library.ISetInferenceEquation" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Models\Library\inferenceEquation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
